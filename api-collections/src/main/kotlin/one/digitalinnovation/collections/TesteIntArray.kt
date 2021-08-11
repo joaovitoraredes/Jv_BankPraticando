@@ -1,30 +1,51 @@
 package one.digitalinnovation.collections
 
 fun main() {
-    val values = IntArray(5)
-    values[0] = 1
-    values[1] = 7
-    values[2] = 6
-    values[3] = 3
-    values[4] = 2
+    val values = IntArray(7)
+    var soma = 0
 
-    for (valor in values) {
+    values[0] = 2
+    values[1] = 6
+    values[2] = 8
+    values[3] = 12
+    values[4] = 1
+    values[5] = 5
+    values[6] = 0
+    println("------------")
+
+    for (valor in values){
         println(valor)
     }
+    println("------------")
 
-    println("-----------------------------")
+/* Outras maneiras de mostrar a saída dos Array
+
+    values.forEach {
+        println(it)
+    }
+    println("------------")
+
     values.forEach { valor ->
         println(valor)
     }
+    println("------------")
 
-    println("-----------------------------")
-    for (index in values.indices) {
+    for (index in values.indices){
         println(values[index])
     }
+    println("------------")
 
-    println("-----------------------------")
+*/
+
     values.sort()
-    for (valor in values) {
+    for (valor in values){
         println(valor)
     }
+    println("------------")
+
+    for (valor in values){
+        soma += valor
+    }
+    println(soma)
+    println("------------")
 }
