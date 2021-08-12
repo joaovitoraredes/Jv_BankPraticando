@@ -1,15 +1,8 @@
 package one.digitalinnovation.collections
 
 fun main() {
-     val values = arrayListOf(1,5,3,9,17,2)
+        val values = arrayListOf(2,6,8,12,1,5,0,3,17)
 
-    values.forEach{
-        println(it)
-    }
-
-    println("--------------")
-
-    values.sort()
     values.forEach{
         println(it)
     }
