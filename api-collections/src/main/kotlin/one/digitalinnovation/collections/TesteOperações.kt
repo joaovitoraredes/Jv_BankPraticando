@@ -25,4 +25,5 @@ fun main() {
     println("-----------------------")
     println(salarios.any { it == 2500.0 })
     println(salarios.any { it == 5000.0 })
+
 }
