@@ -7,11 +7,12 @@ fun main() {
     val henrique = Funcionario ("Henrique Junior", 4000.0, "PJ")
     val jorge = Funcionario ("Jorge Biel", 2000.0, "CLT")
 
-    val funcionario = mutableListOf(joao,henrique,jorge)
-    funcionario.forEach { println(it) }
+    val funcionario = mutableSetOf(joao, henrique, jorge)
+    funcionario.forEach{ println(it) }
 
-    println("--------------------------")
+    println("------------------------")
 
-    funcionario.remove( jorge )
-    funcionario.forEach { println(it) }
+    funcionario.remove(henrique)
+    funcionario.remove(jorge)
+    funcionario.forEach{ println(it) }
 }
