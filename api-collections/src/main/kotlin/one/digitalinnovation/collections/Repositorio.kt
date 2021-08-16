@@ -7,5 +7,10 @@ class Repositorio<T>{
         map[id] = value
     }
 
+    fun findAll() = map.values
+
     fun findById(id: String) = map[id]
+
+    fun remove(id: String) = map.remove(id)
+
 }
